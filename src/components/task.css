@@ -1,0 +1,17 @@
+.MyToDo{
+    
+    display: grid;
+    grid-template-columns:50px 300px 70px 70px;
+    padding: 3rem;
+   
+    border-top: 1px solid #dfdfdf;
+    margin-left: 5%;
+}
+
+.delete-btn{
+    color: red;
+   
+} 
+.edit-btn{
+    color: seagreen;
+}
