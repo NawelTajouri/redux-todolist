@@ -1,4 +1,4 @@
-import { getQueriesForElement } from '@testing-library/dom';
+
 import { ADD, DELETE, EDIT, DONE, FILTER } from './action';
 
 const initialState = {

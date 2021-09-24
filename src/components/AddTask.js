@@ -10,14 +10,20 @@ const AddTask = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch({
-      type: ADD,
-      payload: {
-        id: Math.floor(Math.random() * 10000),
-        value: task,
-        completed: false,
-      },
-    });
+    if (task== "") 
+      {return alert('oups')}
+    else {
+      dispatch({
+        type: ADD,
+        payload: {
+          id: Math.floor(Math.random() * 10000),
+          value: task,
+          completed: false,
+        },
+      });
+    }
+    
+    
     setTask("");
   };
   return (
